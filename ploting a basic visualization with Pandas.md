@@ -17,7 +17,7 @@ np.exp(data[data['Year']==2018]['Log GDP per capita']).plot(
 kind='hist'
 )
  
- ![2018: Một số nhóm các nước có bình quần thu nhập theo đầu người. Không ngạc nhiên vì hầu hết các nước nghèo có bình quân đầu người thấp](https://github.com/ngohaily/Visualization/blob/gh-pages/images/download.png?raw=true)
+ ![image1](https://github.com/ngohaily/Visualization/blob/gh-pages/images/download.png?raw=true)
  
 2018: Một số nhóm các nước có bình quần thu nhập theo đầu người. Không ngạc nhiên vì hầu hết các nước nghèo có bình quân đầu người thấp.
 
@@ -50,6 +50,7 @@ kind='barh',
 figsize=(12,8)
 )
  ![2018: Trung bình GDP đầu người theo các lục địa được dẫn đầu bởi Australia và New Zealand ](https://github.com/ngohaily/Visualization/blob/gh-pages/images/download%20(2).png?raw=true)
+
 2018: Trung bình GDP đầu người theo các lục địa được dẫn đầu bởi Australia và New Zealand 
 
 ## Box plot
