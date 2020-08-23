@@ -1,10 +1,10 @@
-Plotting cơ bản với pandas
+#Plotting cơ bản với pandas
 Pandas có các chức năng được tích hợp có thể được gọi trên Chuỗi hoặc DataFrame. Chúng sử dụng các mặc định thông minh hợp lý và nhanh chóng đưa ra ý tưởng về những gì đang diễn ra. Tuy nhiên trước khi tạo biểu đồ cần phải thiết lập và cài đặt thư viện. 
 import pandas as pd
 import numpy as np
 Và tải dữ liệu về notebook cũng như khám phá chuyển đổi gán nhãn để đối với các nước có thu nhập đầu người theo phân loại (thấp nhất, thấp, trung bình, cao nhất). Dữ liệu được sử dụng là dữ liệu về chỉ số hạnh phúc của thế giới được gộp qua các năm từ năm 2007 đến năm 2018
 
-# Load the data
+## Load the data
 data = pd.read_csv('https://raw.githubusercontent.com/FBosler/AdvancedPlotting/master/combined_set.csv')# this assigns labels per year
 data['Mean Log GDP per capita']  = data.groupby('Year')['Log GDP per capita'].transform(
     pd.qcut,
@@ -12,7 +12,7 @@ data['Mean Log GDP per capita']  = data.groupby('Year')['Log GDP per capita'].tr
     labels=(['Lowest','Low','Medium','High','Highest'])
 )
 
-Để tạo một biểu đồ, hãy gọi .plot (kind = <TYPE OF PLOT>) trên dữ liệu của bạn, như sau:
+##Để tạo một biểu đồ, hãy gọi .plot (kind = <TYPE OF PLOT>) trên dữ liệu của bạn, như sau:
 np.exp(data[data['Year']==2018]['Log GDP per capita']).plot(
 kind='hist'
 )
