@@ -16,8 +16,7 @@ data['Mean Log GDP per capita']  = data.groupby('Year')['Log GDP per capita'].tr
 np.exp(data[data['Year']==2018]['Log GDP per capita']).plot(
 kind='hist'
 )
- 
- 
+  https://github.com/ngohaily/Visualization/blob/gh-pages/images/download.png?raw=true
 2018: Một số nhóm các nước có bình quần thu nhập theo đầu người. Không ngạc nhiên vì hầu hết các nước nghèo có bình quân đầu người thấp.
 
 ### Có năm thông số chính sử dụng khi vẽ với Pandas:
