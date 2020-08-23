@@ -37,7 +37,8 @@ kind='bar',
 figsize=(12,8)
 )
  
- 
+![2015: Danh sách 15 nước có chỉ số hạnh phúc cao nhất trong đó dẫn đầu là Na Uy](https://github.com/ngohaily/Visualization/blob/gh-pages/images/download%20(1).png?raw=true)
+  
 2015: Danh sách 15 nước có chỉ số hạnh phúc cao nhất trong đó dẫn đầu là Na Uy
 
 ## Horizontal bar chart (biểu đồ cột ngang)
@@ -48,7 +49,7 @@ data['Year'] == 2015
 kind='barh',
 figsize=(12,8)
 )
- 
+ ![2018: Trung bình GDP đầu người theo các lục địa được dẫn đầu bởi Australia và New Zealand ](https://github.com/ngohaily/Visualization/blob/gh-pages/images/download%20(2).png?raw=true)
 2018: Trung bình GDP đầu người theo các lục địa được dẫn đầu bởi Australia và New Zealand 
 
 ## Box plot
@@ -56,10 +57,10 @@ data['Life Ladder'].plot(
 kind='box',
 figsize=(12,8)
 )
- 
+  ![Biểu đồ hộp về sự phân bố của Life Ladder cho thấy giá trị trung bình nằm ở đâu đó khoảng 5.5, từ các giá trị dưới 3 đến 8.](https://github.com/ngohaily/Visualization/blob/gh-pages/images/download%20(3).png?raw=true)
 Biểu đồ hộp về sự phân bố của Life Ladder cho thấy giá trị trung bình nằm ở đâu đó khoảng 5.5, từ các giá trị dưới 3 đến 8.
 
-Scatter plot
+## Scatter plot
 data[['Healthy life expectancy at birth','Gapminder Life Expectancy']].plot(
     kind='scatter',
     x='Healthy life expectancy at birth',
@@ -67,7 +68,7 @@ data[['Healthy life expectancy at birth','Gapminder Life Expectancy']].plot(
     figsize=(12,8)
 )
 
- 
+  ![Biểu đồ phân tán của Báo cáo hạnh phúc của thế giới Healthy life expectancy khi sinh so với Gapminder Life Expectancy cho thấy mối tương quan cao giữa hai yếu tố này (dự kiến)](https://github.com/ngohaily/Visualization/blob/gh-pages/images/download%20(4).png?raw=true)
 Biểu đồ phân tán của Báo cáo hạnh phúc của thế giới Healthy life expectancy khi sinh so với Gapminder Life Expectancy cho thấy mối tương quan cao giữa hai yếu tố này (dự kiến)
 
 ## Hexbin chart
@@ -81,7 +82,7 @@ figsize=(12,8),
 cmap="Blues", # defaults to greenish
 sharex=False # required to get rid of a bug
 )
- 
+  ![2018: Biểu đồ Hexbin, Biểu đồ tuổi thọ chống lại Generosity. Màu sắc của các bin cho biết tuổi thọ trung bình của bậc thang trong bin tương ứng.](https://github.com/ngohaily/Visualization/blob/gh-pages/images/download%20(5).png?raw=true)
 2018: Biểu đồ Hexbin, Biểu đồ tuổi thọ chống lại Generosity. Màu sắc của các bin cho biết tuổi thọ trung bình của bậc thang trong bin tương ứng.
 
 ## Pie chart
@@ -93,7 +94,7 @@ figsize=(12,8),
 cmap="Blues_r", # defaults to orangish
 )
 
- 
+  ![2018: Biểu đồ hình tròn hiển thị tổng dân số theo châu lục.](https://github.com/ngohaily/Visualization/blob/gh-pages/images/download%20(6).png?raw=true)
 2018: Biểu đồ hình tròn hiển thị tổng dân số theo châu lục
 
 ## Stacked area chart
@@ -105,7 +106,8 @@ kind='area',
 figsize=(12,8),
 cmap="Blues", # defaults to orangish
 )
- 
+  ![Dân số trên toàn cầu đang gia tăng.](https://github.com/ngohaily/Visualization/blob/gh-pages/images/download%20(7).png?raw=true)
+2018: Biểu đồ hình tròn hiển thị tổng dân số theo châu lục
 Dân số trên toàn cầu đang gia tăng.
 
 ## Line chart
@@ -115,7 +117,7 @@ data['Country name'] == 'Germany'
 kind='line',
 figsize=(12,8)
 )
- 
+ ![Biểu đồ đường mô tả sự phát triển của hạnh phúc ở Đức.](https://github.com/ngohaily/Visualization/blob/gh-pages/images/download%20(8).png?raw=true)
 Biểu đồ đường mô tả sự phát triển của hạnh phúc ở Đức.
 
 # Tóm lại
