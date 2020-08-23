@@ -1,4 +1,4 @@
-### Plotting cơ bản với pandas
+# Plotting cơ bản với pandas
 Pandas có các chức năng được tích hợp có thể được gọi trên Chuỗi hoặc DataFrame. Chúng sử dụng các mặc định thông minh hợp lý và nhanh chóng đưa ra ý tưởng về những gì đang diễn ra. Tuy nhiên trước khi tạo biểu đồ cần phải thiết lập và cài đặt thư viện. 
 import pandas as pd
 import numpy as np
@@ -12,7 +12,7 @@ data['Mean Log GDP per capita']  = data.groupby('Year')['Log GDP per capita'].tr
     labels=(['Lowest','Low','Medium','High','Highest'])
 )
 
-## Để tạo một biểu đồ, hãy gọi .plot (kind = <TYPE OF PLOT>) trên dữ liệu của bạn, như sau:
+### Để tạo một biểu đồ, hãy gọi .plot (kind = <TYPE OF PLOT>) trên dữ liệu của bạn, như sau:
 np.exp(data[data['Year']==2018]['Log GDP per capita']).plot(
 kind='hist'
 )
@@ -20,7 +20,7 @@ kind='hist'
  
 2018: Một số nhóm các nước có bình quần thu nhập theo đầu người. Không ngạc nhiên vì hầu hết các nước nghèo có bình quân đầu người thấp.
 
-# Có năm thông số chính sử dụng khi vẽ với Pandas:
+### Có năm thông số chính sử dụng khi vẽ với Pandas:
 kind: Pandas phải biết loại biểu đồ nào bạn muốn tạo, các lựa chọn sau là có sẵn, hist, bar, barh, scatter, area, kde, line, box, hexbin, pie.
 figsize: Cho phép ghi đè kích thước đầu ra mặc định rộng 6 inch và cao 4 inch. figsize mong đợi một bộ giá trị (ví dụ: figsize = (12,8))
 title: Thêm tiêu đề vào biểu đồ.
@@ -117,5 +117,5 @@ figsize=(12,8)
  
 Biểu đồ đường mô tả sự phát triển của hạnh phúc ở Đức.
 
-## Tóm lại
+# Tóm lại
 Tạo biểu đồ với Pandas rất tiện lợi. Nó có thể dễ dàng truy cập và nhanh chóng. Tuy nhiên nó khá không được đẹp và chỉ ứng dụng với các biểu đồ đơn giản và cơ bản nhất. 
