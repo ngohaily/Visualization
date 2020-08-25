@@ -39,7 +39,9 @@ Hiển thị toàn bộ lãnh thổ Việt Nam với các giá trị  trong cộ
 ## Tạo legend đánh giá với độ chính xác của legend
 
 import matplotlib.pyplot as plt
+
 fig, ax = plt.subplots(1, figsize=(10,10))
+
 df.plot(column= variable,ax=ax, legend=True)
 
 ![vn3](https://github.com/sigvn/Visualization/blob/gh-pages/images/vn3.png)
