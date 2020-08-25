@@ -27,7 +27,9 @@ Hiển thị toàn bộ lãnh thổ trên đất liền của Việt Nam
 ## Xác định biến và khoảng giá trị để hiển thị
 
 variable=df.infected
+
 vmin,vmax = 0,372
+
 df.plot(column=variable)
 
 ![vn1](https://github.com/sigvn/Visualization/blob/gh-pages/images/vn1.png)
