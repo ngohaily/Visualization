@@ -6,23 +6,40 @@ import matplotlib.pyplot as plt
 Hiện nay việc làm việc trên cloud là rất phổ biến chúng ta có thể không cần thiết phải tải file dữ liệu về máy mà có thể điều hướng trực tiếp về kho dữ liệu trên cloud
 
 url = "https://data.vietnam.opendevelopmentmekong.net/en/dataset/100d98c8-4ffc-4b5b-b2a5-c6b71d2eff66/resource/c8b14875-6ab9-4a3e-99e9-8352f695cd77/download/covid-19-provinces.geojson"
+
 df = gpd.read_file(url)
+
 # Plotting thuộc tính của file dữ liệu
+
 df.head()
-![hien thi thuoc tinh file]https://github.com/sigvn/Visualization/blob/gh-pages/images/attribute.png
+
+![hien thi thuoc tinh file](https://github.com/sigvn/Visualization/blob/gh-pages/images/attribute.png)
+
+Thuộc tính của file dữ liệu không gian
 
 ## Plotting graphic
-df.plot()
-![vn] https://github.com/sigvn/Visualization/blob/gh-pages/images/vn.png
 
+df.plot() 
+
+![vn] (https://github.com/sigvn/Visualization/blob/gh-pages/images/vn.png)
+
+Hiển thị toàn bộ lãnh thổ trên đất liền của Việt Nam
 ## Xác định biến và khoảng giá trị để hiển thị
+
 variable=df.infected
 vmin,vmax = 0,372
 df.plot(column=variable)
-![vn1]https://github.com/sigvn/Visualization/blob/gh-pages/images/vn1.png
+
+![vn1](https://github.com/sigvn/Visualization/blob/gh-pages/images/vn1.png)
+
+Hiển thị toàn bộ lãnh thổ Việt Nam với các giá trị  trong cột infected
+
 ## Tạo legend đánh giá với độ chính xác của legend
+
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots(1, figsize=(10,10))
 df.plot(column= variable,ax=ax, legend=True)
 
-![vn3]https://github.com/sigvn/Visualization/blob/gh-pages/images/vn3.png
+![vn3](https://github.com/sigvn/Visualization/blob/gh-pages/images/vn3.png)
+
+Hiển thị bản đồ với bảng chú giải thể hiện sự tăng dần của thuộc tính infected
