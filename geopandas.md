@@ -21,7 +21,7 @@ Thuộc tính của file dữ liệu không gian
 
 df.plot() 
 
-![vn] (https://github.com/sigvn/Visualization/blob/gh-pages/images/vn.png)
+![vn](https://github.com/sigvn/Visualization/blob/gh-pages/images/vn.png)
 
 Hiển thị toàn bộ lãnh thổ trên đất liền của Việt Nam
 ## Xác định biến và khoảng giá trị để hiển thị
